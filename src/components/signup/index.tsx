@@ -12,8 +12,8 @@ const Signup: React.FC = () => {
   const handleSignup = async () => {
     try {
       const response = await axios.post("/user", { name, email });
-      successToast("User created successfully!");
-      if (response.data.status === "success") {
+      if (response.data.id) {
+        successToast("User created successfully!");
         const res = await axios.post(`/generate-otp/${email}`);
         if (res.data.status === "success") {
           successToast(res.data.message);
