@@ -44,7 +44,8 @@ const OTPComponent: React.FC = () => {
     if (canResend) {
       setCanResend(false);
       setTimer(60);
-      await axios.post(`/generate-otp/${email}`);
+      const response = await axios.post(`/generate-otp/${email}`);
+      successToast(response.data.message);
     }
   };
 
