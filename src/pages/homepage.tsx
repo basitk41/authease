@@ -1,8 +1,8 @@
 import { FC } from "react";
-import PasswordGenerator from "@/components/passwordGenerator";
+import Dashboard from "@/components/dashboard";
 
 const Homepage: FC = () => {
-  return <PasswordGenerator />;
+  return <Dashboard />;
 };
 
 export default Homepage;

@@ -1,13 +1,14 @@
 import { FC, Fragment } from "react";
-import Homepage from "@/pages/homepage";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+import { Outlet } from "react-router-dom";
 
 const Layout: FC = () => {
   return (
     <Fragment>
-      {/* <Header /> */}
-      {/* <SideNav /> */}
-      <Homepage />
-      {/* <Footer /> */}
+      <Header />
+      <Outlet />
+      <Footer />
     </Fragment>
   );
 };

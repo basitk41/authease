@@ -1,0 +1,18 @@
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.news-feed {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+}

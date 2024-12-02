@@ -1,0 +1,11 @@
+{
+  "name": "react-app",
+  "build": {
+    "command": "npm run build",
+    "output": "dist"
+  },
+  "start": {
+    "command": "npx serve -s dist",
+    "port": 3000
+  }
+}
